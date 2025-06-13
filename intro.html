@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Anisha Paul - About Me</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                color: #fff;
+            }
+
+            .container {
+                display: flex;
+                min-height: 100vh;
+            }
+
+            .sidebar {
+                width: 200px;
+                background-color: #111;
+                padding: 20px;
+            }
+
+            .sidebar nav ul {
+                list-style: none;
+                padding: 0;
+            }
+
+            .sidebar nav ul li {
+                margin: 20px 0;
+            }
+
+            .sidebar nav ul li a {
+                color: #00bcd4;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+            .main {
+                flex: 1;
+                padding: 40px;
+            }
+
+            .intro h2 {
+                font-size: 28px;
+                color: #00bcd4;
+                margin-bottom: 10px;
+                border-bottom: 2px solid #00bcd4;
+                display: inline-block;
+                padding-bottom: 5px;
+            }
+
+            .intro p {
+                font-size: 18px;
+                line-height: 1.6;
+                margin-bottom: 30px;
+                color: #ddd;
+            }
+
+            .skillcontainer {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                gap: 20px;
+                margin-top: 20px;
+            }
+
+            .skillItem {
+                background-color: #1e1e1e;
+                padding: 15px 20px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 188, 212, 0.2);
+            }
+
+            .skill {
+                height: 10px;
+                background-color: #00bcd4;
+                border-radius: 5px;
+                margin-top: 10px;
+            }
+
+            .projects-grid {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+                margin-top: 30px;
+            }
+
+            .project-card {
+                background-color: #222;
+                padding: 20px;
+                border-radius: 15px;
+                width: 100%;
+                max-width: 300px;
+                box-shadow: 0 0 15px rgba(0, 188, 212, 0.3);
+                transition: transform 0.3s ease;
+            }
+
+            .project-card:hover {
+                transform: scale(1.05);
+            }
+
+            .project-card h3 {
+                color: #00bcd4;
+                margin-bottom: 10px;
+            }
+
+            .project-card p {
+                font-size: 15px;
+                color: #ccc;
+                margin-bottom: 10px;
+            }
+
+            .project-card a {
+                color: #00bcd4;
+                font-weight: bold;
+                text-decoration: none;
+            }
+
+            .project-card a:hover {
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="sidebar">
+                <nav>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/intro.html">About Me</a></li>
+                        <li><a href="/services.html">Services</a></li>
+                        <li><a href="/blog.html">Blog</a></li>
+                        <li><a href="/contact.html">Contact Me</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="main">
+                <div class="intro">
+                    <h2>About Me</h2>
+                    <p>Hello! I'm Anisha Paul — a passionate programmer and ML enthusiast based in West Bengal.
+                        I enjoy building beautiful and functional websites, experimenting with machine learning models,
+                        and continuously pushing the boundaries of what I can create with code.</p>
+
+                    <h2>My Skills</h2>
+                    <div class="skillcontainer">
+                        <div class="skillItem">HTML: <div class="skill" style="width: 100%;"></div>
+                        </div>
+                        <div class="skillItem">CSS: <div class="skill" style="width: 80%;"></div>
+                        </div>
+                        <div class="skillItem">JavaScript: <div class="skill" style="width: 60%;"></div>
+                        </div>
+                        <div class="skillItem">Java: <div class="skill" style="width: 100%;"></div>
+                        </div>
+                        <div class="skillItem">Python: <div class="skill" style="width: 75%;"></div>
+                        </div>
+                        <div class="skillItem">SQL: <div class="skill" style="width: 75%;"></div>
+                        </div>
+                        <div class="skillItem">Machine Learning: <div class="skill" style="width: 100%;"></div>
+                        </div>
+                    </div>
+
+                    <h2>Projects</h2>
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <h3>Alzheimer's Disease Prediction</h3>
+                            <p>GNN-based fake news detection using content and propagation data.</p>
+                            <a href="https://github.com/yourusername/fake-news-gnn" target="_blank">View on GitHub</a>
+                        </div>
+                        <div class="project-card">
+                            <h3>Breast Cancer Detection</h3>
+                            <p>Used MobileNetV2 + EfficientNet-B7 for brain MRI classification.</p>
+                            <a href="https://github.com/yourusername/alzheimers-prediction" target="_blank">View on
+                                GitHub</a>
+                        </div>
+                        <div class="project-card">
+                            <h3>Personal Portfolio Website</h3>
+                            <p>Responsive portfolio website built with HTML, CSS, JS.</p>
+                            <a href="https://github.com/itzzanisha2003/portfolio" target="_blank">View on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
